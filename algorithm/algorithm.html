@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>algorithm</title>
+  </head>
+  <body>
+    <div>
+      <h3>バブルソート</h3>
+      <div class="frame">
+        <p>下記配列をバブルソートを使い、並び替えを行ってください。</p>
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">[2, 5, 8, 7, 3]</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">[2, 3, 5, 7, 8]</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>クイックソート</h3>
+      <div class="frame">
+        <p>下記配列をクイックソートを使い、並び替えを行ってください。</p>
+        <h4 class="sub_title">アルゴリズムのイメージ</h4>
+        <ul>
+          <li>
+            配列の中の小さいデータを左側に集め、大きいデータを右側に集めるて大小二つのグループをつくる。
+          </li>
+          <li>
+            それぞれのグループで同じように小さいデータを左側に、大きいデータを右側に集めてさらに大小二つのグループをつくる。
+          </li>
+          <li>
+            上記の処理を繰り返す事によって配列全体を小さいデータから大きいデータに順番に並べる。
+          </li>
+          <li>
+            クイックソートでは処理速度を速めるために、交換する必要のある値だけを交換する。
+          </li>
+          <li>クイックソートでは「再帰」を利用する</li>
+        </ul>
+        <br />
+        <h4 class="sub_title">交換する必要のある値だけを交換</h4>
+        <p class="text">
+          クイックソートでは、交換する必要のある値だけを交換するために「ピボット(大小の値の分岐点)」を決めます。<br />
+          ※ピボットの決め方は色々あり「真ん中にある値」「右端にある値」など
+        </p>
+        <br />
+        <h4 class="sub_title">「再帰」を利用</h4>
+        <p class="text">再帰とは「自分で自分自身を呼び出す」ことです。</p>
+        <p class="text">
+          先頭から末尾まで順番に探していくような「並列的な繰り返し」はループ処理で行います。
+        </p>
+        <p class="text">
+          しかし、「分割した部分に対してさらに同じように分割する」といった階層的に一段深い処理に対しては再帰を利用します。
+        </p>
+        <br />
+        <h4 class="sub_title">手順</h4>
+        <ol>
+          <li>
+            再帰のための関数を作成する。引数にソートの開始位置と終了位置を設定する。
+          </li>
+          <li>
+            開始位置と終了位置からピボットを決めて、「交換する必要のある値だけを交換」して大小のグループに分割します。
+          </li>
+          <li>
+            分割したグループに対してさらに大小のグループに分けるように再帰的に処理を繰り返します。
+          </li>
+          <li>分割できなくなるまで処理を繰り返しを行えばソート完了</li>
+        </ol>
+      </div>
+      <div class="code">
+        <h4 class="sub_title">入力例</h4>
+        <p class="code_content">[2, 5, 8, 7, 3]</p>
+      </div>
+      <hr />
+      <div class="code">
+        <h4 class="sub_title">出力例</h4>
+        <p class="code_content">[2, 3, 5, 7, 8]</p>
+      </div>
+    </div>
+    <div>
+      <h3>バイナリサーチ(二分探索法)</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          [0, 1, 5, 7, 9, 11, 15, 20, 24]の中から"<span class="partialEmphasis"
+            >15</span
+          >"を検索して、そのIndex番号を返却してください。
+        </p>
+        <br />
+        <p class="text">下記方法を用いて実装してください。</p>
+        <p class="text">1. リニアサーチを用いた方法</p>
+        <p class="text">2. バイナリサーチを用いた方法</p>
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">[0, 1, 5, 7, 9, 11, 15, 20, 24], 15</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">6</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>ユークリッドの互除法</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          ユークリッドの互除法とは、2 つの自然数の最大公約数を求めてください。
+        </p>
+        <ol>
+          <li>2つの自然数のうち、大きい数を小さい数で割る。</li>
+          <li>前の手順の除数を前の手順の余りで割る。</li>
+          <li>これを余りが 0 となるまで繰り返す。</li>
+          <li>余りが0のときの除数が最大公約数である。</li>
+        </ol>
+        <div>
+          <img
+            class="img_box"
+            src="../images/euclids-gozyoho-zukei1.png"
+            alt=""
+          />
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">['15 40']</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">5</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>スタック</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          下記データのブラケットが適切に配置されているか判断してください。
+        </p>
+        <p class="text">
+          正しければ"True"、そうでなければ"False"を返してください。
+        </p>
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">"{key: 'value', key2: [1, 2, 3]}"</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例2</h4>
+          <p class="code_content">"{key: ['value', key2: [1, 2, 3]}"</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">True</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">False</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>フィボナッチ数列</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          下記データのブラケットが適切に配置されているか判断してください。
+        </p>
+        <p class="text">F1=F2=1, Fn+2=Fn+Fn+1 (n≥1)</p>
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">"{key: 'value', key2: [1, 2, 3]}"</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例2</h4>
+          <p class="code_content">"{key: ['value', key2: [1, 2, 3]}"</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">True</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">False</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>バイナリツリー(二分探索木)</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">バイナリツリーをクラスを用いて作成してください。</p>
+        <p class="text">
+          バイナリツリーとは、以下の特徴を持つ構造のことを言います。
+        </p>
+        <img src="../images/col_tree0.png" alt="" />
+        <p class="text">
+          各ノードの値を管理するNodeというクラスを作成してください。
+        </p>
+        <p class="text">各値を追加する関数を作成してください。</p>
+        <div class="code">
+          <h4 class="sub_title">例</h4>
+          <p class="code_content">
+            "class Node { <br />
+            ...処理を記述<br />
+            } } "
+          </p>
+          <br />
+          <p class="code_content">
+            const insert = (node, value) => {<br />
+            ...処理を記述<br />
+            };
+          </p>
+        </div>
+        <div class="code">
+          <div class="code_content">
+            let root;<br />
+            root = insert(root, 3);<br />
+            root = insert(root, 6);<br />
+            root = insert(root, 5);<br />
+            root = insert(root, 7);<br />
+            root = insert(root, 1);<br />
+            root = insert(root, 10);<br />
+            root = insert(root, 2);
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./algorithm.js"></script>
+  </body>
+</html>

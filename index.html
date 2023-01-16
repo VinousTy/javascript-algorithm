@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>コーディングテスト対策</h1>
+    <div>
+      <h3>1. 九九を出力(for文のネストを使用)</h3>
+    </div>
+    <div>
+      <h3>2. FizzBuzz問題</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <h5 class="sub_title">fizzbuzz関数を作成する</h5>
+        <ul>
+          <li>FizzBuzzという名前の関数を作成</li>
+          <li>数値が入る引数を1つ設定</li>
+          <li>
+            引数の数値によって、以下のように戻り値が変わるような処理を作成
+            <ul>
+              <li>
+                数値が3の倍数のとき：戻り値は
+                <span class="partialEmphasis">Fizz</span> という文字列
+              </li>
+              <li>
+                数値が5の倍数のとき：戻り値は
+                <span class="partialEmphasis">Buzz</span> という文字列
+              </li>
+              <li>
+                数値が3の倍数でもあり、5の倍数でもあるとき、戻り値は
+                <span class="partialEmphasis">FizzBuzz</span>
+                という文字列
+              </li>
+              <li>
+                上記のどれも満たさない場合：引数の数値 をそのまま戻り値とする
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="frame">
+        <h5 class="sub_title">fizzbuzz関数を利用する</h5>
+        <ul>
+          <li>
+            fizzbuzz関数を利用する前に、以下のようにmaxという名前の変数を定義する
+          </li>
+          <li>1からmaxまでの連続する整数値について処理を行うループを作成</li>
+          <li>
+            ループの中でfizzbuzz関数を呼び出し、その戻り値をコンソールへ表示
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h3>重複要素の削除</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          要素数Nと配列Aの各要素 A_1, A_2, ..., A_N
+          が与えられるので、同じ値の要素が 2 つ以上含まれないように A
+          を加工した新たな配列を作成してください。
+        </p>
+        <p class="text">
+          new Setを使用せず、ループ処理を使用して作成してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            5<br />
+            1<br />
+            2<br />
+            3<br />
+            5<br />
+            2
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">
+            1<br />
+            2<br />
+            3<br />
+            5
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>文字列処理</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">下記の通り文字列を置き換えよ</p>
+        <p class="text">置き換え前 → 置き換え後</p>
+        <p class="text">
+          A → 4<br />E → 3<br />G → 6<br />I → 1<br />O → 0<br />S → 5<br />Z →
+          2
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>ビット演算子</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          二進数 1 けたの整数 A と B を使って、二進数の計算を行ってください。
+        </p>
+        <img src="./images/02.png" alt="" />
+        <p class="text">
+          上記の画像のように、 A と B を足した結果 (2 進表記) の下から 2
+          けた目の値を C 、下から 1 けた目の値を S とします。 C と S
+          を出力してください。
+        </p>
+        <p class="text">ビット演算子を用いて行ってください。</p>
+      </div>
+    </div>
+    <div>
+      <h3>配列操作</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">繰り返し処理をを用いて配列の中の最大値を出力せよ</p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">['5', '1', '2', '3', '4', '5']</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">5</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>5. 数値処理</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          二つの正整数 a,bが存在する。a と b の積が偶数か奇数か判定せよ。
+        </p>
+        <p class="text">
+          積が奇数なら<span class="partialEmphasis">Odd</span>偶数なら<span
+            class="partialEmphasis"
+            >Even</span
+          >と出力せよ。
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>指定された行数の数字の出力</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          整数 N が与えられるので、 1 から 5
+          までの数字を半角スペース区切りしたもの
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h5 class="sub_title">入力例</h5>
+          <div class="code_content">['5']</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例</h5>
+          <div class="code_content">
+            1 2 3 4 5<br />
+            1 2 3 4 5<br />
+            1 2 3 4 5<br />
+            1 2 3 4 5<br />
+            1 2 3 4 5
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>階段の出力</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          入力された数字を半角スペース区切りで階段上に出力してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h5 class="sub_title">入力例</h5>
+          <div class="code_content">2</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例</h5>
+          <div class="code_content">
+            1<br />
+            1 2
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>割り切れる回数</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">整数 N が与えられます。</p>
+        <p class="text">N が何回 2 で割れるかを求め、出力してください。</p>
+      </div>
+    </div>
+    <div>
+      <h3>階乗</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">整数 N が与えられます。</p>
+        <p class="text">N の階乗 N! を計算して出力してください。</p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h5 class="sub_title">入力例</h5>
+          <div class="code_content">['3']</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例</h5>
+          <div class="code_content">6</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>10 進数から 2 進数に変換</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">10 進数で表された整数 N が与えられます。</p>
+        <p class="text">N を 2 進数に変換して出力してください。</p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h5 class="sub_title">入力例</h5>
+          <div class="code_content">['4']</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例</h5>
+          <div class="code_content">100</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>積の最大</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          配列 A と B についての情報が与えられるので、(A の 1 つの要素) × (B の
+          1 つの要素) の最大値を求めてください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h5 class="sub_title">入力例</h5>
+          <div class="code_content">
+            10 10<br />
+            85 -46 93 44 -40 -75 -75 -18 -54 95 1 95<br />
+            -92 -90 32 -25 36 55 22 86
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例</h5>
+          <div class="code_content">9025</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">入力例2</h5>
+          <div class="code_content">
+            2 3<br />
+            -100 0<br />
+            -100 0 100<br />
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例</h5>
+          <div class="code_content">10000</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>5. 文字列処理(3)</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          あなたは3つのマスを持っており、各マスには0か1が書かれている。
+        </p>
+        <p class="text">1の数を出力せよ。</p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h5 class="sub_title">input</h5>
+          <div class="code_content">100</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">output</h5>
+          <div class="code_content">1</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>再帰処理</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">再帰処理を使用して階乗計算をしてください。</p>
+        <p class="text">
+          基本ケースでは引数の値が2未満の場合、1を返すようにしてください。
+        </p>
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">main(1)</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例2</h4>
+          <p class="code_content">main(3)</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例3</h4>
+          <p class="code_content">main(5)</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">1</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例2</h4>
+          <p class="code_content">6</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">120</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>行列の転置</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          N 行 K 列の行列 A の i 行 j 列 の要素 A_ij を A_ji とした K 行 N
+          列の行列を元の配列 A の転置行列として出力してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4>入力例</h4>
+          <div class="code_content">
+            2 3 <br />
+            1 2 3<br />
+            4 5 6
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4>出力例</h4>
+          <div class="code_content">
+            1 4<br />
+            2 5<br />
+            3 6
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>イテレーター</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          genIteratorといった名前の関数でイテレーターを作成してみてください。
+        </p>
+        <p class="text">
+          変数をインクリメントした値を返り値として設定してください。
+          また、上限値を引数として設定してください。
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>配列処理</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">数値の入った配列が与えられます。</p>
+        <p class="text">
+          各配列の値を左側の総和を足した値に変更して返却してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">[1,2,3,4]</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例2</h4>
+          <p class="code_content">[1,1,1,1,1]</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例3</h4>
+          <p class="code_content">[3,1,2,10,1]</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">[1,3,6,10]</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例2</h4>
+          <p class="code_content">[1,2,3,4,5]</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例3</h4>
+          <p class="code_content">[3,4,6,16,17]</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>ピボットインデックスの場所</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">数値の入った配列が与えられます。</p>
+        <p class="text">ピボットインデックスを返してください。</p>
+        <p class="text">
+          ピボットインデックスとは、そのインデックスの左側にあるすべての数値の和が、そのインデックスの右側にあるすべての数値の和と等しくなるインデックスのことです。
+          インデックスが配列の左端にある場合、左側には要素がないため、左側の和は0になります。これは配列の右端にも当てはまります。
+        </p>
+        <p class="text">ピボットインデックスが存在しない場合、-1を返す。</p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <p class="code_content">[1,7,3,6,5,6]</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例2</h4>
+          <p class="code_content">[1,2,3]</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">入力例3</h4>
+          <p class="code_content">[2,1,-1]</p>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <p class="code_content">3</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例2</h4>
+          <p class="code_content">-1</p>
+        </div>
+        <div class="code">
+          <h4 class="sub_title">出力例3</h4>
+          <p class="code_content">0</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>6. 数値処理(2)</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          あなたは翠江高校の用務員として、校舎に備え付けのエレベーターを管理しています。
+          エレベーターが一定の距離を動くと、定期点検をしなければなりません。
+          エレベーターの動きのログをもとに、エレベーターが何階分の距離を動いたか計算するプログラムを完成させてください。
+          ただし、エレベーターは最初は必ず 1 階にいるものとします。
+        </p>
+      </div>
+      <img src="./images/img.png" alt="" />
+      <div class="frame">
+        <div class="code">
+          <h5 class="sub_title">入力される値</h5>
+          <div class="code_content">
+            N<br />
+            f_1<br />
+            ...<br />
+            f_N
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>1 行目にログの行数を示す整数 N が入力が与えられます。</li>
+            <li>
+              続く N 行にエレベーターが止まった階 f_i (1 ≦ i ≦ N)
+              が整数で順に入力されます。
+            </li>
+            <li>
+              入力は合計で N+1 行であり、最終行の末尾に改行が 1 つ入ります。
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="frame">
+        <h5 class="sub_title">期待する出力</h5>
+        <p class="text">
+          エレベーターが何階分を動いたかを整数で出力してください。
+        </p>
+      </div>
+    </div>
+    <div>
+      <h3>7. ハイアンドロー</h3>
+      <div class="frame">
+        <p>
+          あるカードゲームは、複数枚の子カードそれぞれが、1枚の親カードとの強弱関係で勝負するゲームです。
+        </p>
+        <p>どのカードにも2つの番号が書かれています。</p>
+        <p>
+          1つ目の番号は1から10の整数、2つ目の番号は1から4の整数で表されます。
+          また、2つの番号の各組み合わせは1枚だけカードの束に含まれています。(同じカードが2枚以上存在しません)
+        </p>
+        <p>2枚のカードの強弱関係は、次のルールによって決まります。</p>
+        <ul>
+          <li>1つ目の番号が大きいカードのほうが強い</li>
+          <li>1つ目の番号が同じ場合、2つ目の番号が小さいカードのほうが強い</li>
+        </ul>
+        <p>
+          親カードと子カードの情報が与えられるので、それらの強弱関係を調べるプログラムを作成してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力される値</h4>
+          <div class="code_content">
+            a b<br />
+            n<br />
+            A_1 B_1<br />
+            …<br />
+            A_n B_n<br />
+          </div>
+        </div>
+        <p class="text">
+          1行目では親カードの情報が与えられます。親カードの1つ目の番号は
+          a、2つ目の番号は b で表されます。
+        </p>
+        <p class="text">2行目では整数 n が与えられます。</p>
+        <p class="text">
+          3行目から n 行の入力が続き、各行では、子カード i (1 ≦ i ≦
+          n)の情報が与えられます。
+        </p>
+        <p class="text">
+          子カード i の1つ目の番号は A_i、2つ目の番号は B_i で表されます。
+        </p>
+      </div>
+      <div class="frame">
+        <h4 class="sub_title">期待する出力</h4>
+        <p class="text">
+          出力の i 行目では、親カードと子カード i の強弱関係を調べたときに<br />
+          親カードの方が強いならば "High"、そうでなければ "Low"
+          と出力してください。
+        </p>
+        <div class="code">
+          <h5 class="sub_title">入力例</h5>
+          <div class="code_content">
+            5 1<br />
+            2<br />
+            7 2<br />
+            1 4<br />
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例</h5>
+          <div class="code_content">
+            Low<br />
+            High<br />
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">入力例2</h5>
+          <div class="code_content">
+            7 3<br />
+            4<br />
+            7 1<br />
+            7 4<br />
+            5 3<br />
+            10 1<br />
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h5 class="sub_title">出力例2</h5>
+          <div class="code_content">
+            Low<br />
+            High<br />
+            High<br />
+            Low<br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>8. ポイント払い</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p>
+          燕市に住んでいるあなたは、普段の移動手段は全て燕バスを使います。燕バスでは
+          「TSUBACA」という IC カードを乗車券として使うことができます。事前に
+          「TSUBACA」にチャージをすることで利用できます。
+        </p>
+        <p>
+          バスの運賃支払に「TSUBACA」のカード残額を使うと、運賃の 10 % が
+          「TSUBACA」ポイントとしてたまります。
+        </p>
+        <p>
+          バスを降車する時に、支払う運賃以上のポイントがある場合は、ポイントが優先的に運賃の支払いに使われます。ただし、1
+          ポイントは 1
+          円になります。ただし、ポイントで運賃を支払った場合、新たなポイントは発生しません。
+        </p>
+        <p>
+          カード残金とポイントをどれくらい使ったか知るためのプログラムを書いてください。
+        </p>
+        <div>
+          <img src="./images/img02.png" alt="" />
+        </div>
+        <div class="frame">
+          <h4 class="sub_title">入力される値</h4>
+          <div class="code">
+            <div class="code_content">
+              2000 5<br />
+              300<br />
+              500<br />
+              300<br />
+              100<br />
+              100<br />
+            </div>
+          </div>
+          <ul>
+            <li>
+              1
+              行目にはそれぞれ、はじめにチャージされている金額、バスの乗車回数を表す整数が半角スペース区切りで与えられます。
+            </li>
+            <li>
+              続く行のうちのi 行目 (1 ≦ i ≦ M) には、i
+              回目の降車時にかかった運賃を表す整数 f_i
+              がこの順で半角スペース区切りで与えられます。
+            </li>
+          </ul>
+        </div>
+        <div class="frame">
+          <h4 class="sub_title">期待する出力</h4>
+          <div class="code">
+            <div class="code_content">
+              1700 30<br />
+              1200 80<br />
+              900 110<br />
+              900 10<br />
+              800 20<br />
+            </div>
+          </div>
+          <p>
+            i 回目の降車時のカード残高とポイントを表す整数を出力してください。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>9. 安息の地を求めて</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          今日みたいな天気のよい休日は、近所の公園に行って読書をしましょう！
+        </p>
+        <p class="text">
+          早速、お気に入りの本を持って公園にやってきたあなたでしたが、不運なことに公園の一角で工事が行われているようです。
+        </p>
+        <p class="text">
+          工事現場の近くは騒音が大きいので読書に向いていません。
+          そこであなたは、まず読書に適した場所を探すことにしました。
+        </p>
+        <br />
+        <p class="text">
+          工事現場は公園にただ一つだけあり、その位置は (a, b) です。
+        </p>
+        <p class="text">
+          工事現場から距離 R
+          メートル未満は騒音が大きいので読書には適していません。
+        </p>
+        <p class="text">
+          また、公園には読書にうってつけの木陰が N 箇所あり、i
+          番目の木陰の位置は (x_i, y_i) です。
+        </p>
+        <br />
+        <p class="text">
+          以上の情報が与えられたとき、各木陰が読書に適している(つまり、工事現場から
+          R
+          メートル以上離れている)かどうかを判定するプログラムを書いてください。
+        </p>
+        <p>
+          「位置 (x, y) が工事現場から R
+          メートル以上離れている」という条件は以下の式で表されます。
+        </p>
+        <img src="./images/116img2.png" alt="" />
+      </div>
+      <div class="frame">
+        <h4 class="sub_title">入力される値</h4>
+        <p class="text">
+          1行目には、それぞれ工事現場の位置の x 座標、y 座標を、R
+          は工事現場の騒音の大きさが入力されます。
+        </p>
+        <p class="text">2 行目には木陰の数を表す整数 N が入力されます。</p>
+        <p class="text">
+          続く N 行には各木陰の座標を表す 2 つの整数が入力されます。
+        </p>
+        <div class="code">
+          <h4 class="sub_title">入力例1</h4>
+          <div class="code_content">
+            20 10 10<br />
+            3<br />
+            25 10<br />
+            20 15<br />
+            70 70<br />
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">入力例2</h4>
+          <div class="code_content">
+            50 50 100<br />
+            4<br />
+            0 0<br />
+            0 100<br />
+            100 0<br />
+            100 100<br />
+          </div>
+        </div>
+      </div>
+      <div class="frame">
+        <h4 class="sub_title">期待する出力</h4>
+        <p class="text">
+          木陰が読書に適している (つまり、工事現場から R
+          メートル以上離れている)ならば "silent" と出力してください。
+          その木陰が読書に適していないならば "noisy" と出力してください。
+        </p>
+        <div class="code">
+          <h4 class="sub_title">出力例1</h4>
+          <div class="code_content">
+            noisy<br />
+            noisy<br />
+            silent<br />
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例2</h4>
+          <div class="code_content">
+            noisy<br />
+            noisy<br />
+            noisy<br />
+            noisy<br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>10. お得な買い物</h3>
+      <div class="frame">
+        <h4 class="sub_title">仕様</h4>
+        <p class="text">
+          イオンカードは毎日のお買い物でポイントがたまるお得なポイントカードです。
+          ポイントの付与基準は商品の種類によって以下のように異なります。
+        </p>
+        <img src="./images/point.png" alt="" />
+        <p>ポイントは以下の手順で計算されます。</p>
+        <ol>
+          <li>商品の種類ごとの合計購入金額を計算する。</li>
+          <li>
+            それぞれのポイント付与基準に基づき商品の種類ごとの付与ポイントを計算する。
+          </li>
+          <li>
+            商品の種類ごとの付与ポイントを合計する。<strong
+              >(100円未満は切り捨て)</strong
+            >
+          </li>
+        </ol>
+        <p>買い物内訳と合計ポイントの例を見てみましょう。</p>
+        <br />
+        <p class="text">商品 1: 食料品 200 円</p>
+        <p class="text">商品 2: 書籍 240 円</p>
+        <p class="text">商品 3: 食料品 120 円</p>
+        <p class="text">商品 4: その他 460 円</p>
+        <p class="text">商品 5: 書籍 240 円</p>
+        <p class="text">商品 6: 衣類 3200 円</p>
+        <br />
+        <p class="text">食料品合計 320 円 → 15 ポイント</p>
+        <p class="text">書籍合計 480 円 → 12 ポイント</p>
+        <p class="text">衣類合計 3200 円 → 64 ポイント</p>
+        <p class="text">
+          その他合計 460 円 → 4 ポイント =>
+          <strong>合計ポイント → 95 ポイント</strong>
+        </p>
+        <p class="text">
+          このように、買い物で付与されるポイントの合計を求めてください。
+        </p>
+      </div>
+      <div class="frame">
+        <h4 class="sub_title">入力される値</h4>
+        <div class="code">
+          <h4 class="sub_title">入力例1</h4>
+          <div class="code_content">
+            6<br />
+            0 200<br />
+            1 240<br />
+            0 120<br />
+            3 460<br />
+            1 240<br />
+            2 3200
+          </div>
+        </div>
+        <ul>
+          <li>入力の 1 行目に購入した商品の総数を表す N が与えられます。</li>
+          <li>
+            続く N 行目のうち i 行目 (1 ≦ i ≦ N) に商品の種類を表す整数 v_i
+            および商品の金額を表す整数 p_i
+            がこの順に半角スペース区切りで与えられます。
+          </li>
+          <li>
+            v_i について、0 は食料品、1 は書籍、2 は衣類、3 はその他を表します。
+          </li>
+        </ul>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">出力例1</h4>
+          <div class="code_content">95</div>
+        </div>
+        与えられた買物額に対し「イオンポイント」がいくつ付くかを整数値で出力してください。
+      </div>
+      <div>
+        <h3>大文字、小文字変換</h3>
+        <div class="frame">
+          <h4 class="sub_title">仕様</h4>
+          <p class="text">
+            スペース区切りの2つの整数と、文字列が入力されます。2つの整数の範囲の部分文字列を、大文字にして出力してください。
+          </p>
+        </div>
+        <div class="frame">
+          <div class="code">
+            <h4 class="sub_title">入力例1</h4>
+            <div class="code_content">
+              2 6<br />
+              this is a pen
+            </div>
+          </div>
+          <hr />
+          <div class="code">
+            <h4 class="sub_title">出力例1</h4>
+            <div class="code_content">tHIS Is a pen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 class="sub_title">文字列の重複カウント</h3>
+      <div class="frame">
+        <p class="text">
+          1行目で文字列 s、2行目で文字列 t が入力されます。 s が t
+          の中で何回出現するかカウントして出力してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            AA<br />
+            abdeeAAbAAAbfde
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">3</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>文字と整数の組のソート</h3>
+      <div class="frame">
+        <p class="text">
+          1行目に行数を表す整数 n、続く n
+          行の各行で「文字」と「整数」の組が空白区切りで入力されます。<br />
+          n 個の組を、「整数」の値で昇順に並べ変え、「文字」を出力してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            2<br />
+            A 1<br />
+            B 2
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">
+            A<br />
+            B
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>重複の判定</h3>
+      <div class="frame">
+        <p class="text">
+          指定された配列（リスト）の定義の中で、同じ値が存在した場合はtrueを、そうでない場合はfalseを出力してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">['HND', 'NRT', 'KIX', 'NGO', 'NGO']</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">true</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>重複の判定(map使用)</h3>
+      <div class="frame">
+        <p class="text">
+          mapを使用して指定された配列（リスト）の定義の中で、同じ要素の数をカウントして、その数を出力してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            ['HND', 'NRT', 'KIX', 'NGO', 'NGO', 'NGO', 'NGO', 'NGO']
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">5</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>文字と整数の組のソート2</h3>
+      <div class="frame">
+        <p class="text">
+          1行目に行数を表す整数 n、続く n
+          行の各行で「文字」と「整数」の組が空白区切りで入力されます。
+        </p>
+        <p class="text">
+          n
+          個の組について、「文字」の値が同じ組同士の数値を足しあわせてまとめ、まとめた数値の降順で、文字とまとめた数値の組を出力してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            7<br />
+            A 1<br />
+            D 6<br />
+            C 2<br />
+            G 4<br />
+            B 70<br />
+            A 10<br />
+            B 5
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">
+            B 75<br />
+            A 11<br />
+            D 6<br />
+            G 4<br />
+            C 2
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>占い</h3>
+      <div class="frame">
+        <p class="text">
+          「ユーザー」と「ユーザーに対応する血液型」、「血液型」と「血液型に対応する占い結果」が与えられます。
+        </p>
+        <p class="text">
+          それぞれのユーザーに対応する占い結果を表示してください。
+        </p>
+        <p class="text">
+          入力例の1つ目は、ユーザーの血液型についてのラッキーカラーの占いです。
+        </p>
+        <p class="text">
+          入力例の2つ目は、ユーザーの星座についてのラッキーパーソンの占いになっています。
+        </p>
+        <p class="text">
+          「血液型」として「星座」などのさまざまな文字列を利用できるようにすることで、他の占いにも対応する必要があることに注意してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            5<br />
+            Kyoko B<br />
+            Rio O<br />
+            Tsubame AB<br />
+            KurodaSensei A<br />
+            NekoSensei A<br />
+            4<br />
+            A red<br />
+            B green<br />
+            O blue<br />
+            AB yellow
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">
+            Kyoko green<br />
+            Rio blue<br />
+            Tsubame yellow<br />
+            KurodaSensei red<br />
+            NekoSensei red
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>五目並べ</h3>
+      <div class="frame">
+        <p class="text">5行5列の五目並べの盤面が与えられます。</p>
+        <p class="text">盤面の各マスには、"O"か"X"か"."が書かれています。</p>
+        <p class="text">"O"と"X"は、それぞれプレイヤーの記号を表します。</p>
+        <p class="text">
+          同じ記号が縦か横か斜めに連続で5つ並んでいれば、その記号のプレイヤーが勝者となります。
+        </p>
+        <p class="text">
+          勝者の記号を1行で表示してください。<br />
+          勝者がいない場合は、引き分けとして、"D"を表示してください。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            XXOXO<br />
+            OXOXX<br />
+            OOOOO<br />
+            OXOX.<br />
+            XOXXO
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">O</div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">入力例1</h4>
+          <div class="code_content">
+            XXOXO<br />
+            OXOXX<br />
+            .OXXO<br />
+            OXOO.<br />
+            XXXXX
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例2</h4>
+          <div class="code_content">X</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>クラスの継承</h3>
+      <div class="frame">
+        <p class="text">
+          あなたは大衆居酒屋で働いており、お客さんをクラスに見立てることで店内の情報を管理することとしました。
+        </p>
+        <p class="text">
+          全てのお客さんは、ソフトドリンクと食事を頼むことができます。
+        </p>
+        <p class="text">
+          法律では、 20
+          歳以上のお客さんは成人とみなされ、お酒を頼むことができます。
+        </p>
+        <p class="text">
+          20
+          歳未満のお客さんは未成年とみなされ、お酒を頼もうとした場合はその注文は取り消されます。
+        </p>
+        <p class="text">
+          また、お酒を頼んだ場合、以降の全ての食事の注文 が毎回 200
+          円引きになります。
+        </p>
+        <p class="text">
+          店内の全てのお客さんの数と注文の回数、各注文をしたお客さんの番号とその内容が与えられるので、各お客さんの会計を求めてください。
+        </p>
+        <br />
+        <p class="text">ヒント</p>
+        <br />
+        <p class="text">
+          注文について、20 歳未満のお客さんにできて、 20
+          歳以上のお客さんにできないことはないので、20歳未満のお客さんのクラスを作成して、<br />それを継承して
+          20歳以上のお客さんのクラスを作成することで効率よく実装することができます。
+        </p>
+      </div>
+      <div class="frame">
+        <div class="code">
+          <h4 class="sub_title">入力例</h4>
+          <div class="code_content">
+            2 5<br />
+            59<br />
+            5<br />
+            2 food 1223<br />
+            1 alcohol 4461<br />
+            1 alcohol 4573<br />
+            1 alcohol 1438<br />
+            2 softdrink 1581
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例</h4>
+          <div class="code_content">
+            10472<br />
+            2804
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">入力例2</h4>
+          <div class="code_content">
+            7 7<br />
+            62<br />
+            91<br />
+            29<br />
+            33<br />
+            79<br />
+            15<br />
+            91<br />
+            2 food 3134<br />
+            7 alcohol 2181<br />
+            6 softdrink 4631<br />
+            3 softdrink 3120<br />
+            4 softdrink 4004<br />
+            6 alcohol 1468<br />
+            6 alcohol 1245
+          </div>
+        </div>
+        <hr />
+        <div class="code">
+          <h4 class="sub_title">出力例2</h4>
+          <div class="code_content">
+            0<br />
+            3134<br />
+            3120<br />
+            4004<br />
+            0<br />
+            4631<br />
+            2181
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
